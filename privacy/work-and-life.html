@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Work &amp; Life privacy policy: background location, on-device history, Open-Meteo weather requests, and data deletion.">
+  <title>Privacy Policy — Work &amp; Life | LivDuo</title>
+  <link rel="canonical" href="https://jngvmh002.github.io/f00_livduo/privacy/work-and-life.html">
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f9fc; --surface: #fff; --ink: #172b3e; --muted: #536477; --line: #dce4ec; --link: #005ea8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.75; }
+    header, main, footer { max-width: 860px; margin: auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--line); }
+    header a { font-weight: 650; }
+    main { background: var(--surface); border-radius: 16px; margin-top: 24px; padding: 32px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.25; margin-top: 0; }
+    h2 { font-size: 1.3rem; line-height: 1.4; margin-top: 2rem; }
+    a { color: var(--link); text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+    code { overflow-wrap: anywhere; }
+    .meta, footer { color: var(--muted); }
+    footer { font-size: .9rem; }
+    @media (max-width: 600px) { header, footer { padding: 20px; } main { padding: 24px 20px; border-radius: 0; margin-top: 0; } }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0d1925; --surface: #142536; --ink: #e8eef4; --muted: #b5c4d3; --line: #34495c; --link: #8ecbff; } }
+  </style>
+</head>
+<body>
+  <header><a href="../index.html">LivDuo · Privacy Policies</a></header>
+  <main>
+    <h1>Privacy Policy<br>Work &amp; Life</h1>
+    <p class="meta">Effective date: <time datetime="2026-11-10">November 10, 2026</time></p>
+    <h2>Developer and contact</h2>
+    <p>Work &amp; Life (<code>com.thehubplay.workandlife</code>) is developed by LivDuo to help you track your own work hours and commutes. For support or privacy questions, contact <strong><a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a></strong>.</p>
+    <h2>Information processed on your device</h2>
+    <p>The app processes your saved home and workplace locations (coordinates and detection radii), arrival and departure events with timestamps and accuracy information when available, daily work history, time outside work, commute records, related weather information, and preferences. This information is stored in the app&#x27;s private database on your device. The app does not store a continuous trail of GPS samples.</p>
+    <p>The app accesses location to capture places you choose and detect arrivals and departures at home and work. When you enable automatic tracking and grant background location permission, this can happen even when the app is closed or not in use. This enables work-time recording, commute recording, and related reminders.</p>
+    <p>The app reads device brand and manufacturer locally to show appropriate background setup instructions. It has no account system, advertising, analytics, or history synchronization to LivDuo servers. The release app has no feature for uploading diagnostic logs.</p>
+    <h2>Weather requests and third parties</h2>
+    <p>The app uses Open-Meteo to obtain current weather associated with commute records. Weather requests may be made when a commute is recorded through the app or when a new completed commute is detected by background location processing.</p>
+    <p>For these requests, the app sends the saved destination&#x27;s latitude and longitude rounded to one decimal place over HTTPS to <code>api.open-meteo.com/v1/forecast</code>. Exact saved coordinates are not sent in these weather requests. Work event history and the trip database are not uploaded. Open-Meteo also receives the connection&#x27;s IP address and the request parameters.</p>
+    <p>According to <a href="https://open-meteo.com/en/terms">Open-Meteo&#x27;s Terms &amp; Privacy</a>, reviewed on November 10, 2026, its Free API service may retain IP addresses and webserver logs that can include geographical coordinates for operation, abuse prevention, and troubleshooting. Its policy states that log files are deleted after 90 days. Open-Meteo operates as an independent data controller for the processing described in its notice. LivDuo does not control those logs or promise their immediate deletion.</p>
+    <p>Android and Google Play services provide location and geofencing functionality under the permissions you grant and their applicable platform policies.</p>
+    <h2>Permissions and your choices</h2>
+    <p>Location permissions allow the app to capture places and detect transitions. Background location allows automatic detection while the app is closed or not in use. Notification permission allows reminders, and Android&#x27;s exact-alarm access supports reminders scheduled for a particular time. These permissions are used for app functionality, not advertising.</p>
+    <p>You can turn off automatic tracking in the app&#x27;s Settings and revoke location or notification permissions in Android settings. Revoking permissions affects the related features and does not delete existing history. The current version does not provide a separate switch to disable weather requests.</p>
+    <h2>Storage, retention, and security</h2>
+    <p>Local history is retained until you clear the app&#x27;s data or uninstall it. The app does not automatically delete history after a fixed period. The current Android app sets <code>allowBackup=false</code> and has no in-app backup or restore feature. Device migration behavior can vary by manufacturer; the app cannot guarantee removal of copies created outside its control.</p>
+    <p>The operating system protects the app&#x27;s private storage. The app does not separately encrypt its local database. Weather requests use HTTPS. No security measure can guarantee absolute protection.</p>
+    <h2>Deleting your data</h2>
+    <p>To delete local data, use Android Settings → Apps → Work &amp; Life → Storage → Clear data, or uninstall the app. Android menu names may vary. LivDuo does not hold a server copy of your work history to restore it.</p>
+    <p>Clearing local data does not delete request logs previously received by Open-Meteo. Requests concerning information held by that service are subject to its privacy policy. Contact <strong><a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a></strong> if you need help understanding these options.</p>
+    <h2>Changes to this policy</h2>
+    <p>Updates will be published on this page with a revised effective date.</p>
+  </main>
+  <footer>© 2026 LivDuo · <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a></footer>
+</body>
+</html>
