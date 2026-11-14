@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Expense Kit</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #1f6feb; }
+        h2 { color: #1f6feb; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p><a href="expense-kit.html">Tiếng Việt</a></p>
+    <h1>Privacy Policy — Expense Kit</h1>
+    <p><strong>Effective date:</strong> November 14, 2026</p>
+
+    <p><strong>Expense Kit</strong> (package: <code>com.livduo.expensekit</code>, Vietnamese display name: <strong>Sổ Thu Chi</strong>) is a personal income/expense and debt-tracking app that runs fully offline on your device.</p>
+
+    <h2>1. Data collection</h2>
+    <p>We <strong>do not collect, transmit, or store</strong> any personally identifying information on external servers. The app has no accounts, no backend, no advertising, no behavioral analytics, and <strong>does not request Internet access</strong> (<code>android.permission.INTERNET</code>).</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>The app stores locally: income/expense transactions, debts and payment history, categories, fund sources, budgets, language/currency settings, and home-screen widget data. Data lives in the app's private SQLite database and local system storage. Android Auto Backup and device-to-device transfer are disabled (<code>allowBackup="false"</code>).</p>
+    <p>This data never leaves your device. You stay in full control: edit or delete any item inside the app, or erase everything by uninstalling the app.</p>
+
+    <h2>3. Backup and export</h2>
+    <p>You can actively create a JSON backup file or export CSV/PDF reports, then choose a save location or receiving app through the system dialog. These files are not encrypted by the app. When you share them, the data may leave the app's storage area and becomes subject to the policies of the receiving service. The app never sends, syncs, or uploads files anywhere on its own.</p>
+
+    <h2>4. System permissions</h2>
+    <p>The app only uses the minimum permissions needed to function:</p>
+    <ul>
+        <li><code>POST_NOTIFICATIONS</code>: shows debt due-date reminders you set.</li>
+        <li><code>SCHEDULE_EXACT_ALARM</code>: schedules reminders exactly at 08:00 on the due date; Android may ask you to grant this in system settings.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code>: restores scheduled reminders after a device reboot.</li>
+    </ul>
+    <p><code>VIBRATE</code>, <code>WAKE_LOCK</code>, <code>ACCESS_NETWORK_STATE</code>, and <code>FOREGROUND_SERVICE</code> are declared indirectly by the system notification library to ensure notifications display correctly; the app does not use them to transmit data. The app <strong>does not request</strong> location, contacts, camera, microphone, or any other sensitive permission.</p>
+
+    <h2>5. Home-screen widget</h2>
+    <p>The optional widget shows this month's income/expense totals. Widget data is written to the app's local storage and only displayed on your device's home screen; nothing is sent anywhere.</p>
+
+    <h2>6. Advertising and third parties</h2>
+    <p>The app contains no advertising, no tracking SDKs, no analytics, and no third-party crash reporting.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is a personal finance tool and does not collect personal information from anyone, including children under 13.</p>
+
+    <h2>8. Contact</h2>
+    <p>For questions about this privacy policy or the Expense Kit app, contact us at <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
