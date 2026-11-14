@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách quyền riêng tư - Expense Kit</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #1f6feb; }
+        h2 { color: #1f6feb; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Chính sách quyền riêng tư — Expense Kit</h1>
+    <p><strong>Ngày hiệu lực:</strong> 14/11/2026</p>
+
+    <p>Ứng dụng <strong>Expense Kit</strong> (gói ứng dụng: <code>com.livduo.expensekit</code>, tên hiển thị tiếng Việt: <strong>Sổ Thu Chi</strong>) là sổ ghi thu chi và quản lý nợ cá nhân hoạt động hoàn toàn ngoại tuyến trên thiết bị của bạn.</p>
+
+    <h2>1. Thu thập dữ liệu</h2>
+    <p>Chúng tôi <strong>không thu thập, không truyền tải và không lưu trữ</strong> bất kỳ thông tin nhận dạng cá nhân nào của bạn trên các máy chủ bên ngoài. Ứng dụng không có hệ thống tài khoản, không có máy chủ backend, không có quảng cáo, không có công cụ phân tích hành vi và <strong>không yêu cầu quyền truy cập mạng Internet</strong> (<code>android.permission.INTERNET</code>).</p>
+
+    <h2>2. Dữ liệu lưu trữ trên thiết bị của bạn</h2>
+    <p>Toàn bộ giao dịch thu chi, khoản nợ và lịch sử trả nợ, danh mục, nguồn tiền, ngân sách, cài đặt và nội dung widget màn hình chính đều được lưu trữ hoàn toàn cục bộ trên thiết bị của bạn thông qua cơ sở dữ liệu SQLite riêng của ứng dụng và bộ nhớ cục bộ của hệ điều hành.</p>
+    <p>Dữ liệu này không bao giờ rời khỏi thiết bị của bạn. Bạn có toàn quyền quản lý: chỉnh sửa, xóa từng mục trong ứng dụng, hoặc xóa sạch toàn bộ dữ liệu bằng cách gỡ cài đặt ứng dụng.</p>
+
+    <h2>3. Sao lưu và xuất dữ liệu</h2>
+    <p>Bạn có thể chủ động tạo file sao lưu JSON, xuất báo cáo CSV hoặc PDF, sau đó chọn nơi lưu hoặc ứng dụng nhận file qua hộp thoại của hệ điều hành. Các file này là văn bản/PDF không được ứng dụng mã hóa. Khi bạn chọn một vị trí lưu hoặc một ứng dụng/dịch vụ nhận file, dữ liệu có thể rời khỏi vùng lưu trữ của Expense Kit và sẽ chịu chính sách, bảo mật của nơi nhận. Ứng dụng không tự động gửi, đồng bộ hay tải file này tới bất kỳ đâu.</p>
+
+    <h2>4. Quyền của hệ thống</h2>
+    <p>Ứng dụng chỉ sử dụng các quyền tối thiểu cần thiết để vận hành:</p>
+    <ul>
+        <li><code>POST_NOTIFICATIONS</code>: Hiển thị thông báo nhắc hạn trả nợ do bạn đặt.</li>
+        <li><code>SCHEDULE_EXACT_ALARM</code>: Cho phép đặt báo thức chính xác vào 08:00 ngày đến hạn; Android có thể yêu cầu bạn cấp quyền này trong phần cài đặt hệ thống.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code>: Tự động khôi phục lại các lịch nhắc đã hẹn sau khi bạn khởi động lại thiết bị.</li>
+    </ul>
+    <p>Các quyền <code>VIBRATE</code>, <code>WAKE_LOCK</code>, <code>ACCESS_NETWORK_STATE</code> và <code>FOREGROUND_SERVICE</code> được khai báo gián tiếp bởi thư viện thông báo của hệ thống để đảm bảo thông báo hiển thị đúng; ứng dụng không dùng chúng để truyền dữ liệu. Ứng dụng <strong>hoàn toàn không yêu cầu</strong> quyền định vị (GPS), danh bạ, máy ảnh, micro hay các quyền nhạy cảm khác.</p>
+
+    <h2>5. Widget màn hình chính</h2>
+    <p>Widget tùy chọn hiển thị tổng thu/chi của tháng hiện tại. Dữ liệu widget được ghi vào bộ nhớ cục bộ của ứng dụng và chỉ hiển thị trên màn hình chính thiết bị của bạn; không gửi đi đâu.</p>
+
+    <h2>6. Quảng cáo và dịch vụ bên thứ ba</h2>
+    <p>Ứng dụng không chứa bất kỳ quảng cáo nào, không tích hợp SDK theo dõi hành vi (tracking), không dùng công cụ phân tích (analytics) hay báo cáo lỗi từ bên thứ ba.</p>
+
+    <h2>7. Trẻ em</h2>
+    <p>Ứng dụng là công cụ quản lý tài chính cá nhân và không nhằm mục đích thu thập thông tin cá nhân từ bất kỳ ai, bao gồm cả trẻ em dưới 13 tuổi.</p>
+
+    <h2>8. Liên hệ</h2>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này hoặc về ứng dụng Expense Kit, vui lòng liên hệ với chúng tôi qua email: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
