@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PriceMemo</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #1f6feb; }
+        h2 { color: #1f6feb; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p><a href="price-memo.html">Tiếng Việt</a></p>
+    <h1>Privacy Policy — PriceMemo</h1>
+    <p><strong>Effective date:</strong> November 16, 2026</p>
+
+    <p><strong>PriceMemo</strong> (application ID: <code>com.livduo.pricememo</code>) is a personal price memory and comparison tool that runs entirely offline on your device.</p>
+
+    <h2>1. Data collection</h2>
+    <p>We <strong>do not collect, transmit, or store</strong> any personally identifiable information on external servers. The app has no accounts, no backend, no advertising, and no behavioral analytics. The Android release declares network access <strong>only because</strong> the Google ML Kit component may download its on-device text-recognition (OCR) model via Google Play services on first use — your photos and data are not sent over this connection, and all core features work offline once the model is present on the device.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>All data — your product catalog (name, brand, category, barcode, package size, notes), stores, recorded price observations (price, shelf/purchase kind, promotions, source), target-price watchlist entries, and receipt imports — is stored entirely locally on your device in the app's own SQLite database.</p>
+    <p>This data never leaves your device unless you deliberately export or back it up. You have full control: edit, archive, or delete individual items in the app, or wipe everything by uninstalling. Android Auto Backup and device-to-device transfer are disabled (<code>android:allowBackup="false"</code>).</p>
+
+    <h2>3. Camera and on-device OCR</h2>
+    <p>The app requests camera permission <strong>only when you choose</strong> to scan a barcode, photograph a price tag, or photograph a receipt. Photos you capture or pick are processed <strong>on-device</strong> by Google ML Kit text recognition — image content is not sent to our servers or any third party. You always review and confirm OCR results before anything is saved; the app never persists OCR output automatically.</p>
+    <p>Images used for OCR are temporary files and are deleted after processing unless you choose to keep them. Product or evidence photos you deliberately retain stay inside the app's private storage.</p>
+
+    <h2>4. Backup, export and sharing</h2>
+    <p>You can deliberately create a backup (database, settings, and app-managed media files) and share or save it through the system dialog. Backup files are not additionally encrypted by the app. When you share, data may leave PriceMemo's storage area and becomes subject to the recipient's policies. The app never sends, syncs, or uploads this data anywhere by itself.</p>
+
+    <h2>5. System permissions</h2>
+    <p>The Android release declares: the <strong>camera</strong> permission (<code>android.permission.CAMERA</code>) for the scanning/OCR features — requested only when you use them; and <strong>network access</strong> (<code>android.permission.INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>, declared by the Google ML Kit library) used to fetch the OCR model to the device via Google Play services. The app does <strong>not</strong> request location (GPS), contacts, microphone, notifications, or other sensitive permissions, and never sends user data over the network itself.</p>
+
+    <h2>6. Advertising and third-party services</h2>
+    <p>The app contains no advertising, no tracking SDKs, no analytics, and no third-party crash reporting.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is a personal shopping price tool and is not directed at collecting information from anyone, including children under 13.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have any questions about this privacy policy or about PriceMemo, please contact us at <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>

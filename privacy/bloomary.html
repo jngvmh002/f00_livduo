@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách quyền riêng tư - Bloomary – Plant Journal</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #2d5f3b; }
+        h2 { color: #2d5f3b; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p><a href="bloomary-en.html">English</a></p>
+    <h1>Chính sách quyền riêng tư — Bloomary – Plant Journal</h1>
+    <p><strong>Ngày hiệu lực:</strong> 17/11/2026</p>
+
+    <p>Ứng dụng <strong>Bloomary – Plant Journal</strong> (gói ứng dụng: <code>com.livduo.bloomary</code>) là nhật ký cây cảnh cá nhân, hoạt động hoàn toàn ngoại tuyến trên thiết bị của bạn — không tài khoản, không đám mây, không quảng cáo.</p>
+
+    <h2>1. Thu thập dữ liệu</h2>
+    <p>Chúng tôi <strong>không thu thập, không truyền tải và không lưu trữ</strong> bất kỳ thông tin nhận dạng cá nhân nào của bạn trên các máy chủ bên ngoài. Ứng dụng không có hệ thống tài khoản, không có máy chủ backend, không có quảng cáo, không có công cụ phân tích hành vi và <strong>không yêu cầu quyền truy cập mạng Internet</strong> (không khai báo <code>android.permission.INTERNET</code>).</p>
+
+    <h2>2. Dữ liệu lưu trữ trên thiết bị của bạn</h2>
+    <p>Toàn bộ dữ liệu — hồ sơ cây (tên, tên khoa học, danh mục, giống, ngày/giá mua, thẻ, ghi chú, ảnh bìa), nhật ký chăm sóc, đo lường tăng trưởng, quan sát sức khỏe, nhắc nhở và cài đặt — đều được lưu trữ hoàn toàn cục bộ trên thiết bị của bạn thông qua cơ sở dữ liệu SQLite riêng của ứng dụng.</p>
+    <p>Ứng dụng cũng lưu cục bộ một mã cài đặt ngẫu nhiên, phiên bản ứng dụng và thời điểm/số lần khởi chạy để theo dõi vòng đời app. Dữ liệu này không bao giờ rời khỏi thiết bị. Bạn có toàn quyền quản lý: chỉnh sửa, lưu trữ, xóa từng cây hoặc mục nhật ký trong ứng dụng, hoặc xóa sạch toàn bộ bằng cách gỡ cài đặt. Sao lưu tự động của Android đã được tắt (<code>android:allowBackup="false"</code>).</p>
+
+    <h2>3. Ảnh và tệp media</h2>
+    <p>Ảnh bạn nhập (từ thư viện hoặc camera) được lưu riêng tư trên thiết bị và chỉ dùng để minh họa các mục nhật ký của chính bạn. Hồ sơ cây tham chiếu tới media qua định danh, không sao chép dữ liệu ảnh. Ứng dụng không bao giờ tải ảnh lên đâu.</p>
+
+    <h2>4. Sao lưu, khôi phục và chia sẻ</h2>
+    <p>Bạn có thể chủ động tạo file sao lưu (gồm cơ sở dữ liệu, cài đặt được phép giữ và các tệp media) ngay trên thiết bị, rồi chia sẻ file đó qua hộp thoại hệ thống khi bạn chọn. File sao lưu <strong>không được mã hóa</strong> — mã kiểm tra chỉ phát hiện hỏng dữ liệu, không xác thực nguồn. Chỉ chia sẻ với người bạn tin tưởng. Ứng dụng không tự động gửi, đồng bộ hay tải file này tới bất kỳ đâu, và không nhận bản sao nào.</p>
+
+    <h2>5. Quyền của hệ thống</h2>
+    <ul>
+        <li><strong>Thông báo (POST_NOTIFICATIONS)</strong> — chỉ dùng cho nhắc nhở chăm sóc cây do bạn tự tạo.</li>
+        <li><strong>Camera</strong> — chỉ khi bạn chọn chụp ảnh cho cây hoặc mục nhật ký.</li>
+        <li><strong>Truy cập ảnh/media</strong> — chỉ khi bạn chọn nhập ảnh có sẵn (Android dùng photo picker của hệ thống).</li>
+        <li><strong>Lên lịch báo thức chính xác (SCHEDULE_EXACT_ALARM)</strong> — cho nhắc nhở đúng giờ; có phương án không chính xác khi hệ thống không cho phép.</li>
+        <li><strong>Khởi động cùng máy (RECEIVE_BOOT_COMPLETED)</strong> — để hẹn lại thông báo sau khi máy khởi động lại.</li>
+    </ul>
+
+    <h2>6. Quảng cáo và dịch vụ bên thứ ba</h2>
+    <p>Ứng dụng không chứa bất kỳ quảng cáo nào, không tích hợp SDK theo dõi hành vi, không dùng công cụ phân tích (analytics) hay báo cáo lỗi từ bên thứ ba.</p>
+
+    <h2>7. Trẻ em</h2>
+    <p>Ứng dụng là công cụ nhật ký cá nhân cho người lớn và không nhằm mục đích thu thập thông tin cá nhân từ bất kỳ ai, bao gồm cả trẻ em dưới 13 tuổi.</p>
+
+    <h2>8. Thay đổi chính sách</h2>
+    <p>Chúng tôi có thể cập nhật chính sách này. Mọi thay đổi sẽ được phản ánh bằng cách cập nhật ngày hiệu lực trong tài liệu.</p>
+
+    <h2>9. Liên hệ</h2>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này hoặc về ứng dụng Bloomary, vui lòng liên hệ với chúng tôi qua email: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
+</file_path:<|end_message|><|message_model|>write<|content_invoke_tool_json|>{
