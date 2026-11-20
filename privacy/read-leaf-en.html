@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ReadLeaf</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #3c6556; }
+        h2 { color: #3c6556; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p class="lang-switch"><a href="read-leaf.html">Tiếng Việt</a></p>
+    <h1>Privacy Policy — ReadLeaf</h1>
+    <p><strong>Effective date:</strong> November 21, 2026</p>
+
+    <p><strong>ReadLeaf</strong> (application ID: <code>com.livduo.readleaf</code>) is a personal reading journal and book library that runs entirely offline on your device — no account, no backend, no advertising, and no tracking.</p>
+
+    <h2>1. Data collection</h2>
+    <p>We <strong>do not collect, transmit, or store</strong> any personally identifiable information on external servers. The release build <strong>does not request Internet access</strong> (no <code>android.permission.INTERNET</code> in the release manifest). The app has no account system, no backend server, and no third-party advertising, behavioral analytics, or crash-reporting SDKs.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>All data — your books (title, author, ISBN, publisher, year, genre, page count, description, rating, status, and cover), reading progress and reread rounds, reading sessions, journal entries, quotes, knowledge notes, tags, and settings (language, theme, default reminder time, and media quality) — is stored locally in the app's own SQLite database (<code>readleaf.sqlite</code>) and SharedPreferences.</p>
+    <p>The app also stores a randomly generated installation ID, app version history, and launch counters locally for lifecycle tracking. This data <strong>never leaves your device</strong>, is not an advertising identifier, and is not linked to any account or personal identity. Android Auto Backup is disabled (<code>android:allowBackup="false"</code>).</p>
+    <p>You stay in control: edit or delete individual books, notes, and quotes inside the app, or erase everything by uninstalling it.</p>
+
+    <h2>3. Cover images and media files</h2>
+    <p>Images you pick are copied into the app's private storage, compressed, and used only to illustrate your own library and journal. The database stores only a reference ID to each image; images are <strong>never uploaded</strong> anywhere.</p>
+
+    <h2>4. Backup, restore, and export</h2>
+    <p>You can proactively create a ZIP backup (database, media files, and the allowed settings), restore from it, or export a summary as PDF/Markdown and share it through the operating system's dialog when you choose. Backup files are <strong>not encrypted</strong> — keep them private and share them only with people you trust. The app never sends, syncs, or uploads these files by itself.</p>
+
+    <h2>5. System permissions</h2>
+    <ul>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>)</strong> — used only for review reminders you schedule yourself.</li>
+        <li><strong>Exact alarms and boot receiver (<code>SCHEDULE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>)</strong> — keep those reminders on time even after a device restart.</li>
+        <li><strong>Camera (<code>CAMERA</code>)</strong> — used only if you choose to take a new cover photo; you can also pick an existing image instead.</li>
+    </ul>
+    <p>The app does not request Internet, location, contacts, microphone, or general storage access.</p>
+
+    <h2>6. Advertising and third-party services</h2>
+    <p>The app contains no advertising, no in-app purchases, no behavioral tracking SDKs, and no third-party analytics or crash reporting.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is a personal journaling tool for adults and is not intended to collect information from anyone, including children under 13.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>We may update this policy when app behavior changes. Any change will be reflected by updating the effective date at the top of this page.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have any questions about this privacy policy or the ReadLeaf app, please contact us at <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>

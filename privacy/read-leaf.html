@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách quyền riêng tư - ReadLeaf</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #3c6556; }
+        h2 { color: #3c6556; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p class="lang-switch"><a href="read-leaf-en.html">English</a></p>
+    <h1>Chính sách quyền riêng tư — ReadLeaf</h1>
+    <p><strong>Ngày hiệu lực:</strong> 21/11/2026</p>
+
+    <p>Ứng dụng <strong>ReadLeaf</strong> (gói ứng dụng: <code>com.livduo.readleaf</code>) là nhật ký đọc sách và thư viện cá nhân, hoạt động hoàn toàn ngoại tuyến trên thiết bị của bạn — không tài khoản, không máy chủ, không quảng cáo, không theo dõi.</p>
+
+    <h2>1. Thu thập dữ liệu</h2>
+    <p>Chúng tôi <strong>không thu thập, không truyền tải và không lưu trữ</strong> thông tin cá nhân của bạn trên bất kỳ máy chủ nào. Bản phát hành của ứng dụng <strong>không khai báo quyền truy cập Internet</strong> (không có <code>android.permission.INTERNET</code> trong manifest phát hành); ứng dụng không có tài khoản, không có máy chủ backend, không dùng SDK quảng cáo, phân tích hành vi hay báo cáo lỗi của bên thứ ba.</p>
+
+    <h2>2. Dữ liệu lưu trữ trên thiết bị của bạn</h2>
+    <p>Toàn bộ dữ liệu — sách (tiêu đề, tác giả, ISBN, nhà xuất bản, năm, thể loại, số trang, mô tả, đánh giá, trạng thái, bìa), tiến độ đọc và các lượt đọc lại, phiên đọc, nhật ký, trích dẫn, ghi chú kiến thức, thẻ và cài đặt (ngôn ngữ, giao diện, giờ nhắc mặc định, chất lượng ảnh) — được lưu cục bộ trong cơ sở dữ liệu SQLite riêng (<code>readleaf.sqlite</code>) và SharedPreferences của ứng dụng.</p>
+    <p>Ứng dụng cũng lưu cục bộ một mã cài đặt ngẫu nhiên, lịch sử phiên bản và số lượt khởi chạy để theo dõi vòng đời app. Dữ liệu này <strong>không bao giờ rời khỏi thiết bị</strong>, không phải mã quảng cáo và không liên kết với bất kỳ tài khoản hay danh tính nào. Sao lưu tự động của Android đã được tắt (<code>android:allowBackup="false"</code>).</p>
+    <p>Bạn có toàn quyền quản lý: chỉnh sửa hoặc xóa từng cuốn sách, ghi chú, trích dẫn trong ứng dụng, hoặc xóa sạch toàn bộ bằng cách gỡ cài đặt.</p>
+
+    <h2>3. Ảnh bìa và tệp media</h2>
+    <p>Ảnh bạn chọn được sao chép vào thư mục riêng của ứng dụng, nén lại và chỉ dùng để minh họa cho thư viện/nhật ký của chính bạn. Ứng dụng chỉ lưu mã tham chiếu đến ảnh trong cơ sở dữ liệu; ảnh <strong>không bao giờ được tải lên</strong> đâu.</p>
+
+    <h2>4. Sao lưu, khôi phục và xuất dữ liệu</h2>
+    <p>Bạn có thể chủ động tạo file sao lưu ZIP (gồm cơ sở dữ liệu, các tệp media và cài đặt được phép giữ), khôi phục lại từ file đó, hoặc xuất tóm tắt thành PDF/Markdown rồi tự chia sẻ qua hộp thoại của hệ thống khi bạn chọn. File sao lưu <strong>không được mã hóa</strong> — hãy giữ riêng tư và chỉ chia sẻ với người bạn tin tưởng. Ứng dụng không tự động gửi, đồng bộ hay tải các file này tới bất kỳ đâu.</p>
+
+    <h2>5. Quyền của hệ thống</h2>
+    <ul>
+        <li><strong>Thông báo (<code>POST_NOTIFICATIONS</code>)</strong> — chỉ dùng để nhắc ôn tập ghi chú kiến thức do bạn tự lên lịch.</li>
+        <li><strong>Báo thức chính xác và khởi động lại thiết bị (<code>SCHEDULE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>)</strong> — giữ lịch nhắc đúng giờ ngay cả sau khi khởi động lại máy.</li>
+        <li><strong>Máy ảnh (<code>CAMERA</code>)</strong> — chỉ khi bạn chọn chụp ảnh bìa sách; bạn có thể dùng ảnh có sẵn thay thế.</li>
+    </ul>
+    <p>Ứng dụng không yêu cầu quyền Internet, vị trí, danh bạ, microphone hay quyền đọc/ghi bộ nhớ chung.</p>
+
+    <h2>6. Quảng cáo và dịch vụ bên thứ ba</h2>
+    <p>Ứng dụng không chứa quảng cáo, không mua hàng trong ứng dụng, không tích hợp SDK theo dõi hành vi, không dùng công cụ phân tích hay báo cáo lỗi từ bên thứ ba.</p>
+
+    <h2>7. Trẻ em</h2>
+    <p>Ứng dụng là công cụ nhật ký cá nhân dành cho người lớn và không nhằm mục đích thu thập thông tin từ bất kỳ ai, bao gồm trẻ em dưới 13 tuổi.</p>
+
+    <h2>8. Thay đổi chính sách</h2>
+    <p>Chúng tôi có thể cập nhật chính sách này khi hành vi của ứng dụng thay đổi. Mọi thay đổi sẽ được phản ánh bằng cách cập nhật ngày hiệu lực ở đầu trang.</p>
+
+    <h2>9. Liên hệ</h2>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này hoặc về ứng dụng ReadLeaf, vui lòng liên hệ qua email: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
