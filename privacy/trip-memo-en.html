@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TripMemo</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #3c6556; }
+        h2 { color: #3c6556; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p><a href="trip-memo.html">Tiếng Việt</a></p>
+    <h1>Privacy Policy — TripMemo</h1>
+    <p><strong>Effective date:</strong> November 21, 2026</p>
+
+    <p><strong>TripMemo</strong> (package: <code>com.livduo.tripmemo</code>) is a personal travel journal that works entirely offline on your device — no account, no server, no ads, no tracking.</p>
+
+    <h2>1. Data collection</h2>
+    <p>We <strong>do not collect, transmit, or store</strong> your personal information on any server. The release build <strong>does not request internet access</strong> (no <code>android.permission.INTERNET</code> is declared in the release manifest). The app has no account system, no backend server, and no advertising, analytics or crash-reporting SDKs from third parties.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>All data — trips (title, destination, description, start and end dates, companions, tags, cover photo, archive flag), journal memories (title, story text, date and time, place name, coordinates you type, mood, tags, photos) and preferences (language, theme, photo quality, "On This Day" toggle) — is stored locally in the app's own SQLite database (<code>journal.sqlite</code>) and SharedPreferences.</p>
+    <p>The app also stores locally a random installation ID, the app version and launch counts for app-lifecycle tracking. This data <strong>never leaves your device</strong>. You have full control: edit or delete individual trips, memories and photo links in the app, or erase everything by uninstalling. Android system auto-backup is disabled (<code>android:allowBackup="false"</code>).</p>
+
+    <h2>3. Photos and media</h2>
+    <p>Photos you choose are copied into the app's private storage and used only to illustrate your own journal. Generated thumbnails have EXIF/GPS metadata stripped; the original file you selected may still keep metadata embedded by your device (including EXIF/GPS if present). The app <strong>does not access device location</strong> — place names and coordinates are only what you type yourself. Photos are never uploaded anywhere.</p>
+
+    <h2>4. Backup, restore and sharing</h2>
+    <p>You can proactively create a ZIP backup (database, media files and allowlisted preferences) on your device, then share it yourself through the system share sheet when you choose. You can also export a memory book as a PDF to print or archive and share it through the system share sheet. Backup files are <strong>not encrypted</strong> — keep them private and share only with people you trust. The app never sends, syncs or uploads these files anywhere.</p>
+
+    <h2>5. System permissions</h2>
+    <ul>
+        <li><strong>Photo library access (iOS)</strong> — only when you choose to import a photo into your journal; the purpose is shown in the system permission prompt.</li>
+        <li><strong>Android</strong> — the release build requests no general storage or location permission; data is kept in the app's private directory.</li>
+    </ul>
+
+    <h2>6. Ads and third parties</h2>
+    <p>The app contains no advertising, no behavioral tracking SDKs, no third-party analytics, no third-party crash reporting, and no in-app purchases.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is a personal journal tool for adults and is not directed at collecting information from anyone, including children under 13.</p>
+
+    <h2>8. Policy changes</h2>
+    <p>We may update this policy. Changes will be reflected by updating the effective date in this document.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have any questions about this privacy policy or about TripMemo, please contact us at: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>

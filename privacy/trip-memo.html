@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách quyền riêng tư - TripMemo</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #3c6556; }
+        h2 { color: #3c6556; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p><a href="trip-memo-en.html">English</a></p>
+    <h1>Chính sách quyền riêng tư — TripMemo</h1>
+    <p><strong>Ngày hiệu lực:</strong> 21/11/2026</p>
+
+    <p>Ứng dụng <strong>TripMemo</strong> (gói ứng dụng: <code>com.livduo.tripmemo</code>) là nhật ký du lịch cá nhân, hoạt động hoàn toàn ngoại tuyến trên thiết bị của bạn — không tài khoản, không máy chủ, không quảng cáo, không theo dõi.</p>
+
+    <h2>1. Thu thập dữ liệu</h2>
+    <p>Chúng tôi <strong>không thu thập, không truyền tải và không lưu trữ</strong> thông tin cá nhân của bạn trên bất kỳ máy chủ nào. Bản phát hành của ứng dụng <strong>không khai báo quyền truy cập Internet</strong> (không có <code>android.permission.INTERNET</code> trong manifest phát hành); ứng dụng không có tài khoản, không có máy chủ backend, không dùng SDK quảng cáo, phân tích hành vi hay báo cáo lỗi của bên thứ ba.</p>
+
+    <h2>2. Dữ liệu lưu trữ trên thiết bị của bạn</h2>
+    <p>Toàn bộ dữ liệu — chuyến đi (tiêu đề, điểm đến, mô tả, ngày bắt đầu/kết thúc, bạn đồng hành, thẻ, ảnh bìa, trạng thái lưu trữ), kỷ niệm (tiêu đề, nội dung, ngày giờ, tên địa điểm, tọa độ do bạn nhập, cảm xúc, thẻ, ảnh) và cài đặt (ngôn ngữ, giao diện, chất lượng ảnh, tùy chọn "Ngày này năm ấy") — được lưu cục bộ trong cơ sở dữ liệu SQLite riêng (<code>journal.sqlite</code>) và SharedPreferences của ứng dụng.</p>
+    <p>Ứng dụng cũng lưu cục bộ một mã cài đặt ngẫu nhiên, phiên bản ứng dụng và số lượt khởi chạy để theo dõi vòng đời app. Dữ liệu này <strong>không bao giờ rời khỏi thiết bị</strong>. Bạn có toàn quyền quản lý: chỉnh sửa hoặc xóa từng chuyến đi, kỷ niệm, liên kết ảnh trong ứng dụng, hoặc xóa sạch toàn bộ bằng cách gỡ cài đặt. Sao lưu tự động của Android đã được tắt (<code>android:allowBackup="false"</code>).</p>
+
+    <h2>3. Ảnh và tệp media</h2>
+    <p>Ảnh bạn chọn được sao chép vào thư mục riêng của ứng dụng và chỉ dùng để minh họa nhật ký của chính bạn. Ứng dụng tạo thêm bản thumbnail đã loại bỏ metadata EXIF/GPS; tệp gốc do bạn chọn có thể vẫn giữ metadata nhúng sẵn (kể cả EXIF/GPS nếu có trong ảnh gốc). Ứng dụng <strong>không truy cập vị trí thiết bị</strong> — tọa độ và tên địa điểm chỉ là những gì bạn tự nhập. Ảnh không bao giờ được tải lên đâu.</p>
+
+    <h2>4. Sao lưu, khôi phục và chia sẻ</h2>
+    <p>Bạn có thể chủ động tạo file sao lưu ZIP (gồm cơ sở dữ liệu, các tệp media và cài đặt được phép giữ) ngay trên thiết bị, rồi tự chia sẻ qua hộp thoại hệ thống khi bạn chọn. Bạn cũng có thể xuất sách kỷ niệm thành PDF để in hoặc lưu trữ và chia sẻ qua tính năng chia sẻ của hệ thống. File sao lưu <strong>không được mã hóa</strong> — hãy giữ riêng tư và chỉ chia sẻ với người bạn tin tưởng. Ứng dụng không tự động gửi, đồng bộ hay tải các file này tới bất kỳ đâu.</p>
+
+    <h2>5. Quyền của hệ thống</h2>
+    <ul>
+        <li><strong>Truy cập thư viện ảnh (iOS)</strong> — chỉ khi bạn chọn nhập ảnh vào nhật ký; lý do sử dụng được hiển thị trong cài đặt quyền của hệ thống.</li>
+        <li><strong>Android</strong> — bản phát hành không yêu cầu quyền đọc/ghi bộ nhớ chung hay quyền vị trí; dữ liệu được lưu trong thư mục riêng của ứng dụng.</li>
+    </ul>
+
+    <h2>6. Quảng cáo và dịch vụ bên thứ ba</h2>
+    <p>Ứng dụng không chứa quảng cáo, không tích hợp SDK theo dõi hành vi, không dùng công cụ phân tích (analytics) hay báo cáo lỗi từ bên thứ ba, và không có mua hàng trong ứng dụng.</p>
+
+    <h2>7. Trẻ em</h2>
+    <p>Ứng dụng là công cụ nhật ký cá nhân dành cho người lớn và không nhằm mục đích thu thập thông tin từ bất kỳ ai, bao gồm trẻ em dưới 13 tuổi.</p>
+
+    <h2>8. Thay đổi chính sách</h2>
+    <p>Chúng tôi có thể cập nhật chính sách này. Mọi thay đổi sẽ được phản ánh bằng cách cập nhật ngày hiệu lực trong tài liệu.</p>
+
+    <h2>9. Liên hệ</h2>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này hoặc về ứng dụng TripMemo, vui lòng liên hệ qua email: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
