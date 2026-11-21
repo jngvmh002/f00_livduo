@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - LittleMemo</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #8E6C4E; }
+        h2 { color: #8E6C4E; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p><a href="little-memo.html">Tiếng Việt</a></p>
+    <h1>Privacy Policy — LittleMemo</h1>
+    <p><strong>Effective date:</strong> 21/11/2026</p>
+
+    <p><strong>LittleMemo</strong> (package: <code>com.livduo.littlememo</code>) is a personal childhood memory journal that works entirely offline on your device — no account, no servers, no ads, no tracking.</p>
+
+    <h2>1. Data collection</h2>
+    <p>We <strong>do not collect, transmit, or store</strong> your personal information on any server. The release build declares <strong>no Internet permission</strong> and no broad storage access; the app has no accounts, no backend, and uses no advertising, behavioral analytics, or third-party crash-reporting SDKs.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>All data — child profiles (name, nickname, birthday, basic details), memories (title, content, date, category, tags, location), milestones, quotes, height/weight growth records, photos, and settings (theme, language, prompt and auto-backup preferences) — is stored locally in the app's private SQLite database (<code>little_memo.db</code>), private media directory, and SharedPreferences.</p>
+    <p>The app also stores locally a random installation ID, app version, and launch count for lifecycle tracking. This data <strong>never leaves your device</strong>. You have full control: edit or delete any profile, memory, milestone, quote, or growth record in the app, or remove everything by uninstalling. Android Auto Backup is disabled (<code>android:allowBackup="false"</code>).</p>
+
+    <h2>3. Photos and media files</h2>
+    <p>Photos you pick through the system picker are stored in the app's private directory (<code>media/</code>), automatically compressed with thumbnails. Photos only leave the device when <strong>you actively</strong> share a backup file or PDF via the system share sheet. The app includes a cleanup tool for unreferenced media that you trigger manually in Settings.</p>
+
+    <h2>4. Backup, restore, and sharing</h2>
+    <p>You can manually create a ZIP backup (database, media files, and allowlisted settings) on-device, then share it yourself through the system share sheet. The <strong>auto-backup</strong> feature (enabled by default, can be disabled in Settings) only creates a local backup file every 7 days — files are never sent anywhere automatically. You can also export the Memory Book as a PDF for printing or archiving via the system share feature. Backup files are <strong>not encrypted</strong> — keep them private and only share with people you trust. The app never automatically sends, syncs, or uploads these files anywhere.</p>
+
+    <h2>5. System permissions</h2>
+    <ul>
+        <li><strong>Android</strong> — the release build requires no Internet, broad storage, or location permissions; data lives in the app's private directories. Photos are picked via the system document/photo picker.</li>
+        <li><strong>iOS</strong> — photo library access is only requested when you choose to attach a photo to a memory; the usage reason is shown in system permission settings.</li>
+    </ul>
+
+    <h2>6. Advertising and third-party services</h2>
+    <p>The app contains no ads, no behavioral tracking SDKs, no third-party analytics or crash reporting, and no in-app purchases.</p>
+
+    <h2>7. Children</h2>
+    <p>LittleMemo is a journal tool used by adults to record memories about their children. Data about children exists only locally on the user's device and is never collected or transmitted by us. The app is not directed at collecting information from anyone.</p>
+
+    <h2>8. Policy changes</h2>
+    <p>We may update this policy. Changes will be reflected by updating the effective date in this document.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have any questions about this privacy policy or the LittleMemo app, please contact us at: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
