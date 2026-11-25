@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Day Memo</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #8a7a5c; }
+        h2 { color: #8a7a5c; margin-top: 1.8em; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <p class="lang-switch"><a href="day-memo.html">Tiếng Việt</a></p>
+    <h1>Privacy Policy — Day Memo</h1>
+    <p><strong>Effective date:</strong> 24/11/2026</p>
+
+    <p><strong>Day Memo</strong> (package: <code>com.livduo.daymemo</code>) is a personal journal and daily diary app that works entirely offline on your device — no account, no server, no ads, no tracking.</p>
+
+    <h2>1. Data collection</h2>
+    <p>We <strong>do not collect, transmit, or store</strong> your personal information on any server. The release build of the app <strong>does not declare the Internet permission</strong> (no <code>android.permission.INTERNET</code> in the release manifest); the app has no account, no backend server, and uses no advertising, analytics, or third-party crash-reporting SDKs.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>All data — journal entries (title, content, journal date, creation/edit timestamps, mood, favorite flag, tags, attached photos), in-progress drafts, and settings (language, theme, reminder time, privacy lock, photo quality) — is stored locally in the app's private SQLite database (<code>daymemo.sqlite</code>) and SharedPreferences.</p>
+    <p>The app also stores locally a random installation ID, version history, and launch counts for lifecycle tracking. This data <strong>never leaves your device</strong>, is not an advertising ID, and is not linked to any account or identity. Android's automatic backup is disabled (<code>android:allowBackup="false"</code>).</p>
+    <p>You have full control: edit or delete individual entries in the app, or erase everything by uninstalling the app.</p>
+
+    <h2>3. Attached photos</h2>
+    <p>Photos you pick from your library or take with the camera are copied into the app's private directory, compressed to your chosen quality, and used only to illustrate your own journal entries. The app stores only references to photos in the database; photos are <strong>never uploaded</strong> anywhere. Originals in your gallery are never modified or deleted.</p>
+
+    <h2>4. Backup, restore, and export</h2>
+    <p>You can proactively create a ZIP backup file (containing the database, media files, and allowed settings), restore from it, or export your journal as PDF/plain text and share it yourself through the system share sheet. Backup and export files are <strong>not encrypted</strong> — keep them private and only share them with people you trust. The app never sends, syncs, or uploads these files anywhere.</p>
+
+    <h2>5. System permissions</h2>
+    <ul>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>)</strong> — only for the optional daily writing reminder you enable and schedule; notification content never contains journal data.</li>
+        <li><strong>Device reboot (<code>RECEIVE_BOOT_COMPLETED</code>)</strong> — so the daily reminder keeps working after a reboot.</li>
+        <li><strong>Biometric authentication (<code>USE_BIOMETRIC</code>)</strong> — only when you enable the optional Privacy Lock; uses Face ID/fingerprint/device passcode managed by the OS. The app never stores passwords or PINs.</li>
+        <li><strong>Photo library / Camera</strong> — only when you attach a photo to a journal entry.</li>
+    </ul>
+    <p>The app does not request Internet, location, contacts, or microphone permissions.</p>
+
+    <h2>6. Privacy lock and security</h2>
+    <p>The optional privacy lock is an access-control feature — it is <strong>not database encryption</strong>. When enabled, the app requires biometric or device-credential authentication and relocks after you leave the app; app-switcher snapshots are obscured where the OS supports it. Credentials are managed by the operating system; Day Memo stores no passwords or PINs.</p>
+
+    <h2>7. Advertising and third-party services</h2>
+    <p>The app contains no ads, no in-app purchases, no behavioral tracking SDKs, and no third-party analytics or crash-reporting tools.</p>
+
+    <h2>8. Children</h2>
+    <p>The app is a personal journaling tool intended for adults and is not designed to collect information from anyone, including children under 13.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy when the app's behavior changes. Any changes will be reflected by updating the effective date at the top of this page.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have any questions about this privacy policy or the Day Memo app, please contact us at: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+</body>
+</html>
