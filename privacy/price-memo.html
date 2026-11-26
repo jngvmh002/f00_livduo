@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chính sách quyền riêng tư - PriceMemo</title>
+    <title>Chính sách quyền riêng tư - Price Memo</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
         h1 { color: #1f6feb; }
@@ -13,35 +13,36 @@
 </head>
 <body>
     <p><a href="price-memo-en.html">English</a></p>
-    <h1>Chính sách quyền riêng tư — PriceMemo</h1>
-    <p><strong>Ngày hiệu lực:</strong> 16/11/2026</p>
+    <h1>Chính sách quyền riêng tư — Price Memo</h1>
+    <p><strong>Ngày hiệu lực:</strong> 26/11/2026</p>
 
-    <p>Ứng dụng <strong>PriceMemo</strong> (gói ứng dụng: <code>com.livduo.pricememo</code>) là công cụ ghi nhớ và so sánh giá sản phẩm cá nhân, hoạt động hoàn toàn ngoại tuyến trên thiết bị của bạn.</p>
+    <p>Ứng dụng <strong>Price Memo</strong> (gói ứng dụng: <code>com.livduo.pricememo</code>) là công cụ ghi nhớ và so sánh giá sản phẩm cá nhân, hoạt động ngoại tuyến trên thiết bị của bạn.</p>
 
     <h2>1. Thu thập dữ liệu</h2>
-    <p>Chúng tôi <strong>không thu thập, không truyền tải và không lưu trữ</strong> bất kỳ thông tin nhận dạng cá nhân nào của bạn trên các máy chủ bên ngoài. Ứng dụng không có hệ thống tài khoản, không có máy chủ backend, không có quảng cáo và không có công cụ phân tích hành vi. Bản phát hành Android khai báo quyền truy cập mạng <strong>chỉ vì</strong> thành phần Google ML Kit có thể tải mô hình nhận dạng văn bản (OCR) về máy qua Google Play services vào lần đầu sử dụng — nội dung ảnh và dữ liệu của bạn không được gửi đi qua kết nối này, và toàn bộ tính năng cốt lõi hoạt động ngoại tuyến sau khi mô hình đã có trên máy.</p>
+    <p>Chúng tôi <strong>không thu thập, không truyền tải và không lưu trữ</strong> thông tin nhận dạng cá nhân của bạn trên các máy chủ bên ngoài. Ứng dụng không có tài khoản, không có máy chủ backend, không có quảng cáo và không có công cụ phân tích hành vi.</p>
+    <p>Thành phần Google ML Kit trên Android có thể gửi thông tin ứng dụng và thiết bị, mã định danh lần cài đặt, sự kiện tính năng và chỉ số/chẩn đoán hiệu năng tới Google qua HTTPS để vận hành SDK, chẩn đoán và phân tích sử dụng. Ảnh, mã vạch đã đọc và văn bản nhận dạng được xử lý trên thiết bị.</p>
 
     <h2>2. Dữ liệu lưu trữ trên thiết bị của bạn</h2>
     <p>Toàn bộ dữ liệu — danh mục sản phẩm (tên, thương hiệu, danh mục, mã vạch, quy cách đóng gói, ghi chú), cửa hàng, lịch sử giá ghi nhận (giá, loại kệ/mua, khuyến mãi, nguồn ghi), danh sách theo dõi giá mục tiêu và các lần nhập hóa đơn — đều được lưu trữ hoàn toàn cục bộ trên thiết bị của bạn thông qua cơ sở dữ liệu SQLite riêng của ứng dụng.</p>
-    <p>Dữ liệu này không bao giờ rời khỏi thiết bị của bạn trừ khi bạn chủ động xuất/sao lưu. Bạn có toàn quyền quản lý: chỉnh sửa, lưu trữ (archive) hoặc xóa từng mục trong ứng dụng, hoặc xóa sạch toàn bộ dữ liệu bằng cách gỡ cài đặt ứng dụng. Sao lưu tự động của Android và chuyển dữ liệu sang thiết bị mới đã được tắt (<code>android:allowBackup="false"</code>).</p>
+    <p>Dữ liệu này không bao giờ rời khỏi thiết bị của bạn trừ khi bạn chủ động xuất/sao lưu hoặc nhà cung cấp SDK gửi chẩn đoán như mô tả ở mục 1 và 5. Bạn có toàn quyền quản lý: chỉnh sửa, lưu trữ (archive) hoặc xóa từng mục trong ứng dụng, hoặc xóa sạch toàn bộ dữ liệu bằng cách gỡ cài đặt ứng dụng. Sao lưu tự động của Android và chuyển dữ liệu sang thiết bị mới đã được tắt (<code>android:allowBackup="false"</code>).</p>
 
     <h2>3. Máy ảnh và nhận dạng quang học (OCR)</h2>
-    <p>Ứng dụng chỉ yêu cầu quyền máy ảnh khi <strong>bạn chủ động</strong> chọn quét mã vạch, chụp ảnh nhãn giá hoặc chụp ảnh hóa đơn. Ảnh do bạn chụp hoặc chọn được xử lý <strong>ngay trên thiết bị</strong> bằng bộ nhận dạng văn bản của Google ML Kit — nội dung ảnh không được gửi tới máy chủ của chúng tôi hay bên thứ ba. Bạn luôn được xem và xác nhận kết quả nhận dạng trước khi lưu; ứng dụng không tự động ghi dữ liệu từ OCR.</p>
+    <p>Ứng dụng chỉ yêu cầu quyền máy ảnh khi <strong>bạn chủ động</strong> chọn quét mã vạch, chụp ảnh nhãn giá hoặc chụp ảnh hóa đơn. Ảnh do bạn chụp hoặc chọn được xử lý <strong>ngay trên thiết bị</strong> bằng bộ nhận dạng của Google ML Kit — nội dung ảnh, mã vạch đã đọc và văn bản OCR không được gửi tới máy chủ của chúng tôi. Bạn luôn được xem và xác nhận kết quả nhận dạng trước khi lưu; ứng dụng không tự động ghi dữ liệu từ OCR.</p>
     <p>Ảnh dùng cho OCR là tệp tạm thời và được xóa sau khi xử lý, trừ khi bạn chọn lưu. Ảnh sản phẩm hoặc ảnh bằng chứng bạn chủ động giữ sẽ nằm trong bộ nhớ riêng của ứng dụng.</p>
 
     <h2>4. Sao lưu, xuất dữ liệu và chia sẻ</h2>
-    <p>Bạn có thể chủ động tạo bản sao lưu (gồm cơ sở dữ liệu, cài đặt và tệp media ứng dụng quản lý) rồi chia sẻ hoặc lưu ra ngoài qua hộp thoại hệ thống. File sao lưu không được ứng dụng mã hóa thêm. Khi bạn chia sẻ, dữ liệu có thể rời khỏi vùng lưu trữ của PriceMemo và sẽ chịu chính sách, bảo mật của nơi nhận. Ứng dụng không tự động gửi, đồng bộ hay tải file này tới bất kỳ đâu.</p>
+    <p>Bạn có thể chủ động tạo bản sao lưu (gồm cơ sở dữ liệu, cài đặt và tệp media ứng dụng quản lý) rồi chia sẻ hoặc lưu ra ngoài qua hộp thoại hệ thống. File sao lưu không được ứng dụng mã hóa thêm. Khi bạn chia sẻ, dữ liệu có thể rời khỏi vùng lưu trữ của Price Memo và sẽ chịu chính sách, bảo mật của nơi nhận. Ứng dụng không tự động gửi, đồng bộ hay tải file này tới bất kỳ đâu.</p>
 
     <h2>5. Quyền của hệ thống</h2>
-    <p>Bản phát hành Android của ứng dụng khai báo các quyền: <strong>máy ảnh</strong> (<code>android.permission.CAMERA</code>) cho các tính năng quét/OCR — chỉ được xin khi bạn sử dụng; và <strong>truy cập mạng</strong> (<code>android.permission.INTERNET</code> cùng <code>ACCESS_NETWORK_STATE</code> do thư viện Google ML Kit khai báo) phục vụ việc tải mô hình OCR về máy qua Google Play services. Ứng dụng <strong>không</strong> yêu cầu quyền định vị (GPS), danh bạ, micro, thông báo hay các quyền nhạy cảm khác, và không tự gửi dữ liệu người dùng qua mạng.</p>
+    <p>Bản phát hành Android của ứng dụng khai báo các quyền: <strong>máy ảnh</strong> (<code>android.permission.CAMERA</code>) cho các tính năng quét/OCR — chỉ được xin khi bạn sử dụng; và <strong>truy cập mạng</strong> (<code>android.permission.INTERNET</code> cùng <code>ACCESS_NETWORK_STATE</code> do thư viện Google ML Kit khai báo) phục vụ vận hành SDK, tải tài nguyên khi cần và gửi chẩn đoán/hiệu năng của SDK tới Google qua HTTPS. Ứng dụng <strong>không</strong> yêu cầu quyền định vị (GPS), danh bạ, micro, thông báo hay các quyền nhạy cảm khác, và không tự gửi dữ liệu người dùng qua mạng.</p>
 
     <h2>6. Quảng cáo và dịch vụ bên thứ ba</h2>
-    <p>Ứng dụng không chứa bất kỳ quảng cáo nào, không tích hợp SDK theo dõi hành vi (tracking), không dùng công cụ phân tích (analytics) hay báo cáo lỗi từ bên thứ ba.</p>
+    <p>Ứng dụng không chứa bất kỳ quảng cáo nào, không tích hợp SDK theo dõi hành vi (tracking), không dùng công cụ phân tích hành vi (analytics) hay báo cáo lỗi từ bên thứ ba. Google ML Kit có thể gửi thông tin ứng dụng và thiết bị, mã định danh lần cài đặt và chẩn đoán hiệu năng tới Google qua HTTPS theo mục 1 và 5.</p>
 
     <h2>7. Trẻ em</h2>
     <p>Ứng dụng là công cụ ghi nhớ giá cho người mua sắm cá nhân và không nhằm mục đích thu thập thông tin cá nhân từ bất kỳ ai, bao gồm cả trẻ em dưới 13 tuổi.</p>
 
     <h2>8. Liên hệ</h2>
-    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này hoặc về ứng dụng PriceMemo, vui lòng liên hệ với chúng tôi qua email: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này hoặc về ứng dụng Price Memo, vui lòng liên hệ với chúng tôi qua email: <a href="mailto:livduocom@gmail.com">livduocom@gmail.com</a>.</p>
 </body>
 </html>
